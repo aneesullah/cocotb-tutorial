@@ -4,11 +4,11 @@ on: [push]
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+   # timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
       - run: sudo apt install -y --no-install-recommends iverilog
-      - run: pip3 install cocotb cocotb-bus
+      - run: pip3 install cocotb cocotb-bus cocotb-coverage
       - run: make -C tests
       - uses: actions/upload-artifact@v3
         with:
