@@ -10,3 +10,6 @@ ls venv/lib/python3.10/site-packages/
 #git clone https://github.com/learn-cocotb/tutorial.git
 #cd /home/ubuntu/cocotb_tutorial/tutorial/tests
 make or
+sudo apt install gtkwave
+gtkwave or.vcd
+pip3 install python-constraint 
